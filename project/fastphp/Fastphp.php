@@ -10,7 +10,9 @@ defined('CORE_PATH') or define('CORE_PATH', __DIR__);
 class Fastphp
 {
     // 配置内容
-    protected $config = [];
+//var $config = require(APP_PATH . '../config/config.php');	    
+//echo $config;
+    //protected $config = require(APP_PATH . 'config/config.php');
 
     public function __construct($config)
     {

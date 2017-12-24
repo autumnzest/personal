@@ -30,7 +30,7 @@ class Mysql{
 
     public function __construct($config = array()){
 
-        $host = isset($config['host'])? $config['host'] : 'localhost';
+	$host = isset($config['host'])? $config['host'] : 'localhost';
 
         $user = isset($config['user'])? $config['user'] : 'root';
 
@@ -42,7 +42,7 @@ class Mysql{
 
         $charset = isset($config['charset'])? $config['charset'] : 'utf8';
 
-       
+        date_default_timezone_set('PRC');
 
         $this->conn = mysql_connect("$host:$port",$user,$password) or die('Database connection error');
 
